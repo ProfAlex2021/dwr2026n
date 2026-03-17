@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+}
+
+
+/*Tamanho médio*/
+@media screen and (min-width:768px) {
+    main {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+}
+
+/*Tamanho grande*/
+@media (min-width:992px) {
+    main {
+        display: flex;
+    }
+}
+
+article h3 {
+    font-size: 2em;
+}
+
+article p {
+    font-size: 1.5em;
+}
+    </style>
+</head>
+<body>
+    <main>
+        <article>
+            <h3>Artigo 1</h3>
+            <p>Meu artigo</p>
+        </article>
+        <article>
+            <h3>Artigo 2</h3>
+            <p>Meu artigo</p>
+        </article>
+        <article>
+            <h3>Artigo 3</h3>
+            <p>Meu artigo</p>
+        </article>
+        <article>
+            <h3>Artigo 4</h3>
+            <p>Meu artigo</p>
+        </article>
+    </main>
+</body>
+</html>
